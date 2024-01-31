@@ -10,7 +10,7 @@ keepAlive();
 function formatTime() { //Credits to himika#0001 and never#0001
   const date = new Date();
   const options = {
-    timeZone: 'America/New_York', //https://www.zeitverschiebung.net/en/ and find your city and enter here
+    timeZone: 'Hanoi, Vietnam', //https://www.zeitverschiebung.net/en/ and find your city and enter here
     hour12: true,
     hour: 'numeric',
     minute: 'numeric'
@@ -23,19 +23,19 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rich presence started!`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('')
+    .setApplicationId('1046430425905643612')
     .setType('STREAMING')
-    .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ') //Must be a youtube video link 
+    .setURL('https://www.youtube.com/watch?v=A2cu_za6-bI&t=236s') //Must be a youtube video link 
     .setState('Recording')
-    .setName('')
-    .setDetails(`Valorant [${formatTime()}]`)
+    .setName('Babi I Love U So Much')
+    .setDetails(`Em Xinh Như Một Thiên Thần [${formatTime()}]`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Boring') //Text when you hover the Large image
-    .setAssetsSmallImage('') //You can put links in tenor or discord and etc.
+ .setAssetsLargeImage('https://tenor.com/vi/view/anime-gif-gif-24588312') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('<3') //Text when you hover the Large image
+    .setAssetsSmallImage('https://tenor.com/vi/view/pink-verify-check-gif-23942665') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('Twitch') //Text when you hover the Small image
-    .addButton('Watch', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ')
-    .addButton('Donate', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+    .addButton('Watch', 'https://www.youtube.com/watch?v=-e-9sKl6wHU')
+    .addButton('https://discord.gg/bngccTuB', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
