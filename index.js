@@ -10,7 +10,7 @@ keepAlive();
 function formatTime() { //Credits to himika#0001 and never#0001
   const date = new Date();
   const options = {
-    timeZone: 'America/Port_of_Spain', //https://www.zeitverschiebung.net/en/ and find your city and enter here
+    timeZone: 'HaiPhong/Vietnam', //https://www.zeitverschiebung.net/en/ and find your city and enter here
     hour12: true,
     hour: 'numeric',
     minute: 'numeric'
@@ -28,7 +28,7 @@ client.on('ready', async () => {
     .setURL('https://www.youtube.com/watch?v=A2cu_za6-bI&t=535s') //Must be a youtube video link 
     .setState('Suy vai o')
     .setName('hmm')
-    .setDetails(`24/7 Tương Tư Về Em [${formatTime()}]`)
+    .setDetails(`24/7 Tuong tu ve em [${formatTime()}]`)
     .setStartTimestamp(Date.now())
  .setAssetsLargeImage('https://tenor.com/vi/view/my-dress-up-darling-anime-love-marin-kitagawa-gif-25055013') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('insert funny text') //Text when you hover the Large image
