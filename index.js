@@ -34,8 +34,8 @@ client.on('ready', async () => {
     .setAssetsLargeText('insert funny text') //Text when you hover the Large image
     .setAssetsSmallImage('https://tenor.com/vi/view/pink-verify-check-gif-23942665') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('You weirdo, why would you hover over the small image.') //Text when you hover the Small image
-    .addButton('Discord 🔨', 'https://discord.gg/DhT7adeM')
-    .addButton('Youtube ✏️💞', 'https://www.youtube.com/watch?v=Pi_mL1ONhGk')
+    .addButton('Discord', 'https://discord.gg/DhT7adeM')
+    .addButton('Youtube', 'https://www.youtube.com/watch?v=Pi_mL1ONhGk')
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
