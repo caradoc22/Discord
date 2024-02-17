@@ -10,7 +10,7 @@ keepAlive();
 function formatTime() { //Credits to himika#0001 and never#0001
   const date = new Date();
   const options = {
-    timeZone: 'HaiPhong/Vietnam', //https://www.zeitverschiebung.net/en/ and find your city and enter here
+    timeZone: 'China/Guang_zhou, //https://www.zeitverschiebung.net/en/ and find your city and enter here
     hour12: true,
     hour: 'numeric',
     minute: 'numeric'
@@ -44,7 +44,7 @@ client.on('ready', async () => {
   setInterval(() => {
     const newTime = formatTime();
     if (newTime !== prevTime) {
-      const newDetails = `24/7 Tương Tư Về Em [${newTime}]`;
+      const newDetails = `24/7 Tuong Tu Ve Em [${newTime}]`;
       r.setDetails(newDetails);
       client.user.setActivity(r);
       prevTime = newTime;
